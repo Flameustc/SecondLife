@@ -79,9 +79,17 @@ TP的类型，括号里是在RLV中对应的关键字
 
 ### 查看地图
 
+保存地标
+
 ### 和其他玩家互动
 
 玩家的名字构成
+
+- 旧用户名（legacy name）：形如 LoginName Resident，是你注册游戏时填写的名字加上 Resident 后缀，保持大小写，不能重名
+- 新用户名（username）：形如 loginname，在旧用户名的基础上删除了 Resident 后缀，统一为小写，不能重名
+- 昵称（display name）：用户自己取的昵称，可以使用任何字符，两次修改之间至少要间隔一周，可以重名
+- 
+
 
 - 公开聊天
     - 说话（chat）/ 小声说（whisper）/ 大叫（shout）
@@ -111,53 +119,73 @@ TP的类型，括号里是在RLV中对应的关键字
 
 - Ctrl+Alt+T
 - Derender
+- Edit linked
 
 ## 物品和物品栏
 
 ### 物品栏
 
-    物品栏中的目录图标可以在 [SL官方wiki](https://wiki.secondlife.com/wiki/Inventory) 上找到对应的说明，不同的客户端可能有所区别。
-    除了默认的目录以外，另一个非常重要的目录是 #RLV 目录，详见 [RLV](#RLV) 一节。
+物品栏中的目录图标可以在 [SL官方wiki](https://wiki.secondlife.com/wiki/Inventory) 上找到对应的说明，不同的客户端可能有所区别。
+除了默认的目录以外，另一个非常重要的目录是 #RLV 目录，详见 [RLV](#RLV) 一节。
 
-    SL默认的物品类别可以在 [SL官方wiki](https://wiki.secondlife.com/wiki/Inventory) 上找到对应的说明。
-    除了默认的物品类别以外，比较重要的物品类别有：
+SL默认的物品类别可以在 [SL官方wiki](https://wiki.secondlife.com/wiki/Inventory) 上找到对应的说明。
+除了默认的物品类别以外，比较重要的物品类别有：
 
-    - Attachment
-    - BOX
-        - 需要rez
-        - 自解包
-    - HUD
-    - Alpha
-    - AO
-    - RLV Relay
+- Attachment
+- BOX
+    - 需要rez
+    - 自解包
+- HUD
+- Alpha
+- AO
+- RLV Relay
 
-    使用物品栏过滤器寻找特定物品。
+使用物品栏过滤器寻找特定物品。
 
 - 物品属性
 
-    - Copy
-    - Modify
-    - Transfer
-    - Rigged
+    - copy
+
+        当一个物品被设置为 (no copy) 的时候，操作会导致物品从以前的地方消失：
+
+        - rez
+        - 通过
+
+    - modify
+
+        当一个物品被设置为 (no modify) 的时候，你仍然可以：
+
+        - 移动（move）
+        - 旋转（rotate）
+        - 修改贴图（texture）
+        - 修改贴图参数（比如Glossiness）
+        - 重置脚本
+        
+        你不能：
+        - 缩放（strectch）
+        - 改变内容（content）
+
+    - transfer
+    - rigged
 
 ### 可穿戴的物品
 
-    - 穿戴（wear）/ 添加（add）
-    - 脱下（detach）
-    - 触摸（touch）
-    - 编辑（edit）
-    - 加入套装（outfit）
+- 穿戴（wear）/ 添加（add）
+- 脱下（detach）
+- 触摸（touch）
+- 编辑（edit）
+- 加入套装（outfit）
 
 穿戴物品的限制：不超过38个attachment
 
 ### 可生成的物品
 
-    - 生成（rez）/ 收起（take）
-    - 打开（open）
-    - 触摸（touch）
-    - 坐下（sit）/ 站起（stand）
-    - 购买（pay）
-    - 身体接触
+- 生成（rez）/ 收起（take）
+- 打开（open）
+- 触摸（touch）
+- 坐下（sit）/ 站起（stand）
+- 购买（pay）
+- 身体接触
 
 生成物品的限制：Land Impact（LI）
 
